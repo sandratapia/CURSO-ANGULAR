@@ -1,0 +1,18 @@
+<header class="header">
+  <h1>Lista de la Compra</h1>
+</header>
+<main class="main">
+  <div class="container">
+    <div class="formulario__container">
+      <formulario (productoCreado)="onProductoCreado($event)"></formulario>
+    </div>
+    <div class="listas__container">
+      <div class="pendientes">
+        <lista-productos [productos]="productosSeleccionados" textoBoton="Comprar" tituloProductos="Pendientes de comprar" (productoSeleccionado)="onProductoSeleccionado($event)"></lista-productos>
+      </div>
+      <div class="comprados">
+        <lista-productos [productos]="productosComprados" textoBoton="Quitar" tituloProductos="Comprados" (productoSeleccionado)="onProductoNoSeleccionado($event)"></lista-productos>
+      </div>
+    </div>
+  </div>
+</main>

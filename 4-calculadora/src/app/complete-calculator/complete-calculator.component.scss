@@ -1,0 +1,40 @@
+.calculator{
+    width: 200px;
+    border: 1px solid grey;
+    background-color: lightgray;
+    padding: 5px;
+    margin: auto;
+    .concatenar__result{
+        background-color: white;
+        color: black;
+        height: 20px;
+        text-align: center;
+        line-height: 100%;
+        border: 1px solid grey;
+        padding-top: 5px;
+    }
+    .numbers__buttons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        button{
+            width: 33.33%;
+        }
+        button:last-child{
+            width: 100%;
+        }
+    }
+    .calc__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        button{
+            width: 25%;
+            height: 30px;
+        }
+        button:last-child{
+            width: 100%;
+        }
+    }
+
+}

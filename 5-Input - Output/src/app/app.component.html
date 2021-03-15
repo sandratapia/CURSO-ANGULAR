@@ -1,0 +1,19 @@
+<alerta [mensaje]="titulos[0]" subtitulo="subtitulo 1" (alertaPulsada)="onAlertaPulsada($event)"></alerta>
+<alerta [mensaje]="titulos[1]" (alertaPulsada)="onAlertaPulsada($event)"></alerta>
+<alerta [mensaje]="titulos[2]" subtitulo="subtitulo 3" (alertaPulsada)="onAlertaPulsada($event)"></alerta>
+
+<!-- TWO WAY BINDING -->
+<input type="text" [(ngModel)]="campoTexto">
+<p>{{campoTexto}}</p>
+<p>
+    <button (click)="onClickVariable()">Cambia valor variable</button>
+</p>
+
+<!-- TWO WAY BINDING OBJETOS -->
+<div>
+    <input type="text" [(ngModel)]="persona.nombre">
+    <input type="text" [(ngModel)]="persona.apellidos">
+    <input type="text" [(ngModel)]="persona.edad">
+</div>
+
+<p>Me llamo {{persona.nombre}} {{persona.apellidos}} y tengo {{persona.edad}} años.</p>

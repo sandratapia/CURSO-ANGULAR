@@ -1,0 +1,54 @@
+h2{
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+.enter__task{
+    display: flex;
+    flex-direction: column;
+    width: 49.5vw;
+    border-right: 3px solid black;
+    .title__task{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        font-family: 'Caveat', cursive;
+        font-size: 30px;
+        label{
+            padding-right: 79px;
+        }
+        input{
+            font-family: 'Caveat', cursive;
+            font-size: 25px;
+        }
+    }
+    .description__task{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px; 
+        font-family: 'Caveat', cursive;
+        font-size: 30px;
+        label{
+            padding-right: 20px;
+        }
+        input{
+            font-family: 'Caveat', cursive;
+            font-size: 25px;
+        }
+    }
+    .send__button{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        .send{
+            padding: 10px 20px;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}

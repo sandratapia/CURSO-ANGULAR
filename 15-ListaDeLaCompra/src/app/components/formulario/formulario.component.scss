@@ -1,0 +1,26 @@
+.formulario{
+    width: 300px;
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+        label{
+            margin-bottom: 10px;
+        }
+        input{
+            padding:5px;
+        }
+        select{
+            padding:5px;
+            option{
+                margin: 4px;
+            }
+        }
+    }
+    .btn{
+        width: 100%;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

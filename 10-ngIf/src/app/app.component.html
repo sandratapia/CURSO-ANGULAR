@@ -1,0 +1,5 @@
+<p *ngIf="mostrar; else elseBlock">Contenido del parrafo</p>
+<ng-template #elseBlock>
+  <p>Contenido del segundo párrafo</p>
+</ng-template>
+<button (click)="onClickMostrar()">Mostrar / Ocultar</button>

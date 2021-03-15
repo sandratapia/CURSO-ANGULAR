@@ -1,0 +1,15 @@
+<div [ngSwitch]="opcionNumero">
+    <p *ngSwitchCase="1">Opción 1</p>
+    <p *ngSwitchCase="2">Opcion 2</p>
+    <p *ngSwitchCase="3">Opcion 3</p>
+    <p *ngSwitchCase="4">Opcion 4</p>
+    <p *ngSwitchDefault>Ninguna de las anteriores</p>
+</div>
+
+<div [ngSwitch]="opcionString">
+    <p *ngSwitchCase="'uno'">Opción 1</p>
+    <p *ngSwitchCase="'dos'">Opcion 2</p>
+    <p *ngSwitchCase="'tres'">Opcion 3</p>
+    <p *ngSwitchCase="'cuatro'">Opcion 4</p>
+    <p *ngSwitchDefault>Ninguna de las anteriores</p>
+</div>

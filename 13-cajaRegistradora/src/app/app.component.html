@@ -1,0 +1,14 @@
+<header class="header">
+  <h1>Realiza tu pedido</h1>
+</header>
+<main class="main">
+  <div class="container">
+    <div class="izquierda">
+      <lista-productos titulo="Comida" [productos]="arrayComida" (productoSeleccionado)="onProductoSeleccionado($event)"></lista-productos>
+      <lista-productos titulo="Bebida" [productos]="arrayBebida" (productoSeleccionado)="onProductoSeleccionado($event)"></lista-productos>
+    </div>
+    <div class="derecha">
+      <comanda [arrayProductosRecibidos]="productosSeleccionados"></comanda>
+    </div>
+  </div>
+</main>

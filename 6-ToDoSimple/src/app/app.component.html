@@ -1,0 +1,11 @@
+<header class="header">
+    <h1>List your tasks!</h1>
+</header>
+<main class="main">
+    <div class="form">
+        <formulario (tareaCreada)="onTareaCreada($event)"></formulario>
+    </div>
+    <div class="tasks">
+        <lista [tareas]="arrayTareas" (borrarTarea)="borrarTarea($event)"></lista>
+    </div>
+</main>

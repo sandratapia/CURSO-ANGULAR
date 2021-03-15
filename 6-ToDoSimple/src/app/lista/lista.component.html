@@ -1,0 +1,15 @@
+<div class="task__list">
+    <h2>Lista de tareas</h2>
+    <div class="show__task">
+        <ul class="complete__tasks">
+            <li class="task" *ngFor="let tarea of tareas" [ngClass]="{completa: tarea.completa, incompleta:!tarea.completa}">
+                <h3>{{tarea.titulo}}</h3>
+                <p>{{tarea.descripcion}}</p>
+                <div class="funcionalities">
+                    <button class="button" (click)="deleteTask(task)">Eliminar Tarea</button>
+                    <button class="button" (click)="tareaCompletada(tarea)">Completa / Incompleta</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

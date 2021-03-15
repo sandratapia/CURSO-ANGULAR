@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+<div class="all__component">
+    <suma (emisor1)="recibeNumeros($event, 1)" (emisor2)="recibeNumeros($event, 2)"></suma>
+    <buttonRs (click)="resultadoClick()"></buttonRs>
+    <result [resultSuma]="sumaResultado"></result>
+</div>

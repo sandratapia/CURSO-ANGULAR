@@ -1,0 +1,14 @@
+<h2>Introduce tu tarea</h2>
+<div class="enter__task">
+    <div class="title__task">
+        <label for="title">Título</label>
+        <input type="text" id="title" [(ngModel)]="nuevaTarea.titulo">
+    </div>
+    <div class="description__task">
+        <label for="description">Descripción</label>
+        <input type="text" id="description" [(ngModel)]="nuevaTarea.descripcion">
+    </div>
+    <div class="send__button">
+        <button class="send" (click)="onClickSubmit()">Enviar</button>
+    </div>
+</div>
