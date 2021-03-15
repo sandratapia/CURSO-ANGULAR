@@ -1,0 +1,12 @@
+<h1>Angular Routing</h1>
+<div class="rutas">
+  <a [routerLink]="['/sobre']" routerLinkActive="activa">Sobre mi</a>
+  <a [routerLink]="['/informacion']" routerLinkActive="activa">Información de la página</a>
+  <a [routerLink]="['/contacto']" routerLinkActive="activa">Contacta con nosotros</a>
+</div>
+<router-outlet></router-outlet>
+<div class="botones">
+  <button (click)="onClick('sobre')">Sobre mi</button>
+  <button (click)="onClick('informacion')">Informacion de la pagina</button>
+  <button (click)="onClick('contacta')">Contacta con nosotros</button>
+</div>
