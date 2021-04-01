@@ -1,0 +1,18 @@
+<body> 
+  <app-header></app-header>
+  <main>
+    <h2>Paginas: {{numPages}}</h2>
+    <p>Num página {{currentPage}}</p>
+    <div class="btns">
+      <button class="previous" (click)="changePage(false)" [disabled]="currentPage === 1">Anterior</button>
+      <button class="next" (click)="changePage(true)" [disabled]="currentPage === numPages">Siguiente</button>
+    </div>
+    <div class="personajes">
+      <div class="personaje" *ngFor="let personaje of arrPersonajes">
+        <img [src]="personaje.image" alt="">
+        <h3>{{personaje.name}}</h3>
+        <p>{{personaje.species}}</p>
+      </div>
+    </div>
+  </main>
+</body>

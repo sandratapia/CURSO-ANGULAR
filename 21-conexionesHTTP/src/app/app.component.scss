@@ -1,0 +1,14 @@
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .post{
+        border: 1px solid black;
+        width: 400px;
+        padding: 10px;
+        margin: 10px;
+        h4{
+            text-align: center;
+        }
+    }
+}
