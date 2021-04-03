@@ -1,13 +1,94 @@
-.personajes{
+.controls{
+    color: #9cc949;
+    text-align: center;
+    .btns{
+        margin: 10px;
+        button{
+            margin: 5px;
+            font-size: 20px;
+            font-family: 'Orbitron', sans-serif;
+            border: 3px solid #04bcd3;
+            border-radius: 15px;
+            color: #9cc949;
+            background-color: black;
+            padding: 15px;
+            width: 150px;
+            outline: none;
+            &:hover{
+                box-shadow: 0px 0px 5px 5px rgba(4,188,211,1);
+                transform: scale(1.05);
+            }
+            &:disabled{
+                background-color: grey;
+            }
+        }
+    }
+}
+
+.character__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .personaje{
-        border: 1px solid black;
-        margin: 5px;
-        padding: 5px;
-        img{
-            width: 100%;
+    align-items: center;
+    .character__card{
+        width: 250px;
+        height: 350px;
+        margin: 15px;
+        border: 3px solid #04bcd3;
+        border-radius: 15px;
+        color: #9cc949;
+        background-color: black;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            box-shadow: 0px 0px 5px 5px rgba(4,188,211,1);
+            transform: scale(1.05);
+        }
+        .container__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+            width: 200px;
+            min-height: 200px;
+            background-image: url(../assets/images/portal.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            img{
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+            }
+        }
+        .container__info{
+            text-align: center;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-size: 18px;
+                margin: 0px;
+                padding: 8px 0 8px 0;
+                text-decoration: none;
+            }
+            p{
+                margin: 0px;
+                padding: 8px 0 15px 0;
+                text-decoration: none;
+                .fas, .fab{
+                    margin-left: 8px;
+                }
+                .fa-reddit-alien{
+                    font-size: 19px;
+                }
+            }
         }
     }
 }
